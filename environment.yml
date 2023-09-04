@@ -2,15 +2,14 @@ name: jumboconda
 channels:
   - tufts
   - conda-forge
+platforms:
+  - win-64
 dependencies:
   - altair
   - astropy
   - beautifulsoup4
   - biopython
   - bokeh
-  - boto3
-  - bottleneck
-  - bqplot
   - cartopy
   - conda
   - contextily
@@ -22,7 +21,6 @@ dependencies:
   - earthpy
   - eo-learn
   - featuretools
-  - flask
   - folium
   - gdal
   - geemap
@@ -34,28 +32,23 @@ dependencies:
   - geoplot
   - geopy
   - geosnap
-  - geotiff
   - geoviews
   - geowombat
   - git
   - graphviz
   - h5netcdf
   - h5py
-  - hdf5
   - holoviews
   - hvplot
   - idle-shortcut # [win]
   - intake
   - intervaltree
   - ipympl >= 0.8.2
-  - ipyparallel
   - ipywidgets >= 8.0.1
   - jdcal
   - joblib
   - jupyter-resource-usage
   - jupyterlab 4.0.5
-  - jupyterlab-git
-  - kealib
   - keplergl
   - laspy
   - leafmap
@@ -70,7 +63,6 @@ dependencies:
   - modin
   - momepy
   - movingpandas
-  - mpld3
   - mplleaflet
   - netcdf4
   - networkx
@@ -98,8 +90,6 @@ dependencies:
   - pycaret
   - pycountry
   - pycurl
-  - pygeos
-  - pygml
   - pygmt
   - pymysql
   - pyodbc
@@ -111,8 +101,7 @@ dependencies:
   - pyshp
   - pyspectral
   - pytables
-  - python 3.9.*
-  - pytz
+  - python >= 3.9
   - pyyaml
   - rasterio
   - rasterstats
@@ -140,21 +129,17 @@ dependencies:
   - shapely
   - snorkel
   - spacy
-  - spacy-lookups-data
   - sparse
   - spatialpandas
   - spectral
   - spyder-kernels
   - sqlalchemy
-  - sqlite
   - stateplane
   - statsmodels
   - streamz
   - sunpy
   - sympy
   - tpot
-  - turfpy
-  - tweepy
   - urbanaccess
   - urbansim
   - urllib3
@@ -163,7 +148,6 @@ dependencies:
   - verde
   - xarray
   - xarray-spatial
-  - xarray_leaflet
   - xgboost
   - yellowbrick
   - zarr
