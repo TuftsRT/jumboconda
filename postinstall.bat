@@ -2,6 +2,9 @@
 
 REM configure geopandas to use shapely instead of pygeos
 SETX USE_PYGEOS 0 /M
+IF %ERRORLEVEL% NEQ 0 (
+    SETX USE_PYGEOS 0
+)
 
 REM configure jupyterlab to disable popups and update checking
 IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings" (
