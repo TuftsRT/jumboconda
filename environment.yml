@@ -17,6 +17,7 @@ dependencies:
   - curl
   - dask
   - datashader
+  - dill
   - earthengine-api
   - earthpy
   - eo-learn
@@ -91,18 +92,21 @@ dependencies:
   - pycountry
   - pycurl
   - pygmt
+  - pykrige
   - pymysql
   - pyodbc
   - pyppeteer
   - pyproj
   - pyqtgraph
   - pyrosar
+  - pyrosm
   - pysal
   - pyshp
   - pyspectral
   - pytables
-  - python >= 3.9
+  - python 3.10.*
   - pyyaml
+  - r5py
   - rasterio
   - rasterstats
   - regex
@@ -114,7 +118,6 @@ dependencies:
   - rsgislib
   - rtree
   - satpy
-  - scikit-geometry
   - scikit-gstat
   - scikit-image
   - scikit-learn
