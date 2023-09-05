@@ -13,9 +13,6 @@ IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings" (
     ECHO }
 ) > "%PREFIX%\share\jupyter\lab\settings\overrides.json"
 
-ICACLS "%PREFIX%" /grant BUILTIN\users:(OI)(CI)(M) /C /Q
-ICACLS "%PREFIX%\*" /reset /T /C /Q
-
 SETX USE_PYGEOS 0 /M
 
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" (
