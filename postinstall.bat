@@ -13,7 +13,8 @@ IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings" (
     ECHO }
 ) > "%PREFIX%\share\jupyter\lab\settings\overrides.json"
 
-ICACLS "%PREFIX%\Scripts\*.exe" /grant BUILTIN\users:RX /C /Q
+ICACLS "%PREFIX%" /grant BUILTIN\users:(OI)(CI)(M) /C /Q
+ICACLS "%PREFIX%\*" /reset /T /C /Q
 
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" (
     REN "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" "JumboConda"
