@@ -16,7 +16,7 @@ conda_default_channels:
   - conda-forge
 
 license_file: LICENSE
-keep_pkgs: False
+keep_pkgs: True
 write_condarc: True
 
 installer_type: exe
