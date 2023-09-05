@@ -30,3 +30,19 @@ IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboco
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" (
     REN "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" "JumboConda Bash.lnk"
 )
+
+IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" (
+    REN "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" "JumboConda"
+)
+
+IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Prompt.lnk" (
+    REN "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Prompt.lnk" "JumboConda Prompt.lnk"
+)
+
+IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda PowerShell.lnk" (
+    REN "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda PowerShell.lnk" "JumboConda PowerShell.lnk"
+)
+
+IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" (
+    REN "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" "JumboConda Bash.lnk"
+)
