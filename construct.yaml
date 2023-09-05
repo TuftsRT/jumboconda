@@ -1,0 +1,33 @@
+name: JumboConda
+version: 4.0.5-2309
+company: "Tufts University"
+
+welcome_image_text: JumboConda
+header_image_text: JumboConda
+default_image_color: blue
+
+channels:
+  - tufts
+  - conda-forge
+
+specs: specs.txt
+
+conda_default_channels:
+  - conda-forge
+
+license_file: LICENSE
+keep_pkgs: True
+write_condarc: True
+
+installer_type: exe
+post_install: postinstall.bat
+
+default_prefix_domain_user: "%USERPROFILE%\\JumboConda"
+default_prefix_all_users: "%SYSTEMDRIVE%\\JumboConda"
+
+icon_image: tufts.ico
+
+initialize_by_default: False
+register_python_default: True
+check_path_length: True
+check_path_spaces: True
