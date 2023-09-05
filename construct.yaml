@@ -31,3 +31,5 @@ initialize_by_default: False
 register_python_default: True
 check_path_length: True
 check_path_spaces: True
+
+nsis_template: template.nsi
