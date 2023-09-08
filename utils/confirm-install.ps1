@@ -10,9 +10,9 @@ if (Test-Path $hook) {
     $writer.Flush()
     $stream.Position = 0
     if ((Get-FileHash -InputStream $stream -Algorithm $algo).Hash -eq $hash) {
-        Write-Host "Installed"
+        Write-Host "Fully Installed"
     } else {
-        Write-Host "Not Installed"
+        Write-Host "Corrupted Installation"
     }
 } else {
     Write-Host "Not Installed"
