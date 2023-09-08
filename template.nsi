@@ -1237,22 +1237,6 @@ Section "Install"
     ${EndIf}
 
     WriteUninstaller "$INSTDIR\Uninstall-${NAME}.exe"
-
-    # To address CVE-2022-26526.
-    # Revoke the write permission on directory "$INSTDIR" for Users if this is
-    # being run with administrative privileges. Users are:
-    #   AU - authenticated users
-    #   BU - built-in (local) users
-    #   DU - domain users
-    ${If} ${UAC_IsAdmin}
-        DetailPrint "Setting installation directory permissions..."
-        AccessControl::DisableFileInheritance "$INSTDIR"
-        AccessControl::RevokeOnFile "$INSTDIR" "(AU)" "GenericWrite"
-        AccessControl::RevokeOnFile "$INSTDIR" "(DU)" "GenericWrite"
-        AccessControl::RevokeOnFile "$INSTDIR" "(BU)" "GenericWrite"
-        AccessControl::SetOnFile "$INSTDIR" "(BU)" "GenericRead + GenericExecute"
-        AccessControl::SetOnFile "$INSTDIR" "(DU)" "GenericRead + GenericExecute"
-    ${EndIf}
 SectionEnd
 
 !macro AbortRetryNSExecWaitLibNsisCmd cmd
