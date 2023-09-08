@@ -21,6 +21,43 @@ IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings\" (
     ECHO }
 ) > "%PREFIX%\share\jupyter\lab\settings\overrides.json"
 
+REM configure jupyterlab desktop for use with jumboconda
+IF "%PREFIX:users=%"=="%PREFIX%" (
+    REM systemwide installation
+    FOR /F "delims=" %%d IN ('dir /AD /B "%SYSTEMDRIVE%\Users"') DO (
+        IF /I "%%d" NEQ "All Users" (
+            IF /I "%%d" NEQ "Default User" (
+                IF /I "%%d" NEQ "Public" (
+                    IF NOT EXIST "%SYSTEMDRIVE%\Users\%%d\AppData\Roaming\jupyterlab-desktop\" (
+                        MKDIR "%SYSTEMDRIVE%\Users\%%d\AppData\Roaming\jupyterlab-desktop"
+                    )
+                    (
+                        ECHO {
+                        ECHO   "checkForUpdatesAutomatically": false,
+                        ECHO   "installUpdatesAutomatically": false,
+                        ECHO   "pythonPath": "%PREFIX:\=\\%\\python.exe",
+                        ECHO   "serverEnvVars": {}
+                        ECHO }
+                    ) > "%SYSTEMDRIVE%\Users\%%d\AppData\Roaming\jupyterlab-desktop\settings.json"
+                )
+            )
+        )
+    )
+) ELSE (
+    REM single user installation
+    IF NOT EXIST "%APPDATA%\jupyterlab-desktop\" (
+        MKDIR "%APPDATA%\jupyterlab-desktop
+    )
+    (
+        ECHO {
+        ECHO   "checkForUpdatesAutomatically": false,
+        ECHO   "installUpdatesAutomatically": false,
+        ECHO   "pythonPath": "%PREFIX:\=\\%\\python.exe",
+        ECHO   "serverEnvVars": {}
+        ECHO }
+    ) > "%APPDATA%\jupyterlab-desktop\settings.json"
+)
+
 REM convert start menu entries to camelcase
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda\" (
     REN "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" "JumboConda"
