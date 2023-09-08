@@ -1,5 +1,7 @@
 @ECHO OFF
 
+SET PATH=%PATH%;"C:\Windows\System32\"
+
 REM configure geopandas to use shapely instead of pygeos
 SETX USE_PYGEOS 0 /M
 IF %ERRORLEVEL% NEQ 0 (
@@ -7,7 +9,7 @@ IF %ERRORLEVEL% NEQ 0 (
 )
 
 REM configure jupyterlab to disable popups and update checking
-IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings" (
+IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings\" (
     MKDIR "%PREFIX%\share\jupyter\lab\settings"
 )
 (
@@ -20,7 +22,7 @@ IF NOT EXIST "%PREFIX%\share\jupyter\lab\settings" (
 ) > "%PREFIX%\share\jupyter\lab\settings\overrides.json"
 
 REM convert start menu entries to camelcase
-IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" (
+IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda\" (
     REN "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" "JumboConda"
 )
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Prompt.lnk" (
@@ -32,7 +34,7 @@ IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboco
 IF EXIST "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" (
     REN "%PROGRAMDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" "JumboConda Bash.lnk"
 )
-IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" (
+IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda\" (
     REN "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Jumboconda" "JumboConda"
 )
 IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Prompt.lnk" (
@@ -43,4 +45,13 @@ IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda 
 )
 IF EXIST "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" (
     REN "%APPDATA%\Microsoft\Windows\Start Menu\Programs\JumboConda\Jumboconda Bash.lnk" "JumboConda Bash.lnk"
+)
+
+REM reconfigure access permissions for systemwide installation
+IF "%PREFIX:users=%"=="%PREFIX%" (
+    ICACLS "%PREFIX%" /inheritance:d /C /Q
+    ICACLS "%PREFIX%" /remove "Authenticated Users" /C /Q
+    ICACLS "%PREFIX%" /grant "BUILTIN\Administrators:(OI)(CI)(F)" /C /Q
+    ICACLS "%PREFIX%" /grant "BUILTIN\Users:(OI)(CI)(M)" /C /Q
+    ICACLS "%PREFIX%\*" /reset /T /C /Q
 )
