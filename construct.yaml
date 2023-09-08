@@ -8,6 +8,7 @@ default_image_color: blue
 
 channels:
   - tufts
+  - pytorch
   - conda-forge
 
 specs: specs.txt
@@ -21,8 +22,10 @@ write_condarc: True
 
 installer_type: exe
 post_install: postinstall.bat
+pre_uninstall: pre-uninstall.bat
 
-default_prefix_domain_user: "%USERPROFILE%\\JumboConda"
+default_prefix: "%USERPROFILE%\\JumboConda"
+default_prefix_domain_user: "%LOCALAPPDATA%\\JumboConda"
 default_prefix_all_users: "%SYSTEMDRIVE%\\JumboConda"
 
 icon_image: tufts.ico
