@@ -1,1 +1,3 @@
-# jumboconda
+# JumboConda
+
+JumboConda is an education-focused Python distribution optimized for data science, geospatial analysis, statistics, data visualization, machine learning (ML), natural language processing (NLP), and bioinformatics. JumboConda is designed for and installed on all Windows-based public computing infrastructure at Tufts University and it is intended to be used with JupyterLab Desktop. JumboConda comes prepackaged with both the Conda and Mamba package managers and supports streamlined unattended installations by automatically configuring any new or existing JupyterLab Desktop installations to use the JumboConda Python environment by default.
