@@ -1,5 +1,6 @@
 @ECHO OFF
 
+ECHO Configuring JumboConda... Do not close command prompt.
 SET PATH=%PATH%;"C:\Windows\System32\"
 
 REM remove environment variables
