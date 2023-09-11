@@ -1,9 +1,9 @@
 $hook = "C:\JumboConda\shell\condabin\conda-hook.ps1"
-$hash = "A932372355874975920B2FE83FFFE7F1F5CF52214F34DCDBC10409674D5E57A9"
+$hash = "DEDA9DCF6F93E6F052A83F8F8E7CD4FB9A0E5DF1E9950DA5D83FA07D989A85F8"
 $algo = "SHA256"
 if (Test-Path $hook) {
     Invoke-Expression $hook
-    $out = Invoke-Conda list --export
+    $out = [string](Invoke-Conda list --export)
     $stream = [System.IO.MemoryStream]::new()
     $writer = [System.IO.StreamWriter]::new($stream)
     $writer.write($out)
@@ -12,7 +12,7 @@ if (Test-Path $hook) {
     if ((Get-FileHash -InputStream $stream -Algorithm $algo).Hash -eq $hash) {
         Write-Host "Fully Installed"
     } else {
-        Write-Host "Corrupted Installation"
+        Write-Host "Outdated or Corrupted Installation"
     }
 } else {
     Write-Host "Not Installed"
