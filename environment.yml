@@ -50,6 +50,7 @@ dependencies:
   - ipywidgets >= 8.0.1
   - jdcal
   - joblib
+  - jupysql
   - jupyter-resource-usage
   - jupyterlab 4.1.8
   - keplergl
@@ -95,8 +96,12 @@ dependencies:
   - pycountry
   - pycurl
   - pydantic < 2.0
+  - pydot
   - pygmt
+  - pygraphviz
   - pykrige
+  - pymongo
+  - pymongoarrow
   - pymysql
   - pyodbc
   - pyppeteer
@@ -110,6 +115,7 @@ dependencies:
   - pyspectral
   - pytables
   - python 3.11.*
+  - python-duckdb
   - pytorch
   - pyyaml
   - r5py
