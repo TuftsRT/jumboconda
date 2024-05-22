@@ -95,8 +95,6 @@ dependencies:
   - pseudonetcdf
   - psycopg2
   - pyarrow
-  - pycaret
-  - pycountry
   - pycurl
   - pydantic
   - pydot
