@@ -93,7 +93,6 @@ dependencies:
   - powershell-shortcut # [win]
   - proj
   - pseudonetcdf
-  - psychopy
   - psycopg2
   - pyarrow
   - pycaret
