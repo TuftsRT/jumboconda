@@ -11,6 +11,7 @@ dependencies:
   - beautifulsoup4
   - biopython
   - bokeh
+  - boto3
   - cartopy
   - conda
   - contextily
@@ -91,7 +92,9 @@ dependencies:
   - powershell-shortcut # [win]
   - proj
   - pseudonetcdf
+  - psychopy
   - psycopg2
+  - pyarrow
   - pycaret
   - pycountry
   - pycurl
@@ -166,5 +169,6 @@ dependencies:
   - xarray
   - xarray-spatial
   - xgboost
+  - xlsxwriter
   - yellowbrick
   - zarr
