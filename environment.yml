@@ -117,7 +117,7 @@ dependencies:
   - pysoundfile
   - pyspectral
   - pytables
-  - python 3.11.*
+  - python 3.10.*
   - python-duckdb
   - pytorch
   - pyyaml
