@@ -14,7 +14,6 @@ dependencies:
   - boto3
   - cartopy
   - conda
-  - conda-libmamba-solver
   - contextily
   - cpuonly
   - csvkit
