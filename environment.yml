@@ -65,7 +65,7 @@ dependencies:
   - mechanicalsoup
   - mesa
   - miniforge_console_shortcut >= 2.0 # [win]
-  - mizani < 0.10
+  - mizani
   - modin
   - momepy
   - movingpandas
@@ -74,7 +74,7 @@ dependencies:
   - networkx
   - nltk
   - nodejs
-  - numba < 0.57
+  - numba
   - numexpr
   - numpy
   - obspy
@@ -96,7 +96,7 @@ dependencies:
   - pyarrow
   - pycountry
   - pycurl
-  - pydantic < 2.0
+  - pydantic
   - pydot
   - pygmt
   - pygraphviz
