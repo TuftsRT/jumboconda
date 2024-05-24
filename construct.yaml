@@ -11,12 +11,18 @@ channels:
   - pytorch
   - conda-forge
 
-specs: specs.txt
-
 conda_default_channels:
   - tufts
   - pytorch
   - conda-forge
+
+specs: specs.txt
+
+menu_packages:
+  - git
+  - idle-shortcut
+  - miniforge_console_shortcut
+  - powershell-shortcut
 
 condarc:
   solver: libmamba
