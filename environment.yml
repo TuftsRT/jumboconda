@@ -166,7 +166,14 @@ dependencies:
   - urbansim
   - urllib3
   - utm
-  - vaex
+  - vaex-arrow
+  - vaex-astro
+  - vaex-core >= 4.17.1
+  - vaex-hdf5
+  - vaex-jupyter
+  - vaex-ml
+  - vaex-qt
+  - vaex-viz
   - verde
   - xarray
   - xarray-spatial
