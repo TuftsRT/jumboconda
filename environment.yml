@@ -64,6 +64,7 @@ dependencies:
   - matplotlib
   - matplotlib-scalebar
   - mechanicalsoup
+  - menuinst < 2.0.0
   - mesa
   - miniforge_console_shortcut >= 2.0 # [win]
   - mizani
