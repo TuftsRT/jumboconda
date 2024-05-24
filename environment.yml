@@ -142,7 +142,7 @@ dependencies:
   - scikit-mobility
   - scikit-spatial
   - scikit-surprise
-  - scipy
+  - scipy < 1.13.0
   - seaborn
   - sentinelsat
   - sgkit
