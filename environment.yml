@@ -19,7 +19,7 @@ dependencies:
   - cpuonly
   - csvkit
   - curl
-  - dask
+  - dask < 2023.11.0
   - datashader
   - dill
   - earthengine-api
