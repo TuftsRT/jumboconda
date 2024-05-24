@@ -3,6 +3,12 @@
 ECHO Configuring JumboConda... Do not close command prompt.
 SET PATH=%PATH%;"C:\Windows\System32\"
 
+REM disable outdated package warnings
+SETX OUTDATED_IGNORE 1 /M
+IF %ERRORLEVEL% NEQ 0 (
+    SETX OUTDATED_IGNORE 1
+)
+
 REM configure geopandas to use shapely instead of pygeos
 SETX USE_PYGEOS 0 /M
 IF %ERRORLEVEL% NEQ 0 (
