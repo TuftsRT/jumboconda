@@ -29,12 +29,11 @@ geopy
 geosnap
 geoviews
 geowombat
-git
-graphviz
 h5netcdf
 h5py
 holoviews
 hvplot
+hyperopt
 intake
 intervaltree
 jdcal
@@ -61,6 +60,7 @@ numba
 numexpr
 numpy
 obspy
+optuna
 osmnx
 pandana
 pandas
@@ -73,7 +73,6 @@ pomegranate
 PseudoNetCDF
 psycopg2
 pyarrow
-pycaret
 pycountry
 pycurl
 pydantic
@@ -113,7 +112,6 @@ skgstat
 skimage
 sklearn
 skmob
-skopt
 skspatial
 snorkel
 soundfile
