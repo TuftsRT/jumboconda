@@ -45,6 +45,7 @@ dependencies:
   - h5py
   - holoviews
   - hvplot
+  - hyperopt
   - idle-shortcut # [win]
   - intake
   - intervaltree
@@ -80,6 +81,7 @@ dependencies:
   - numexpr
   - numpy
   - obspy
+  - optuna
   - osmnx
   - pandana
   - pandas
@@ -138,7 +140,6 @@ dependencies:
   - scikit-image
   - scikit-learn
   - scikit-mobility
-  - scikit-optimize
   - scikit-spatial
   - scikit-surprise
   - scipy
