@@ -172,7 +172,6 @@ dependencies:
   - vaex-hdf5
   - vaex-jupyter
   - vaex-ml
-  - vaex-qt
   - vaex-viz
   - verde
   - xarray
