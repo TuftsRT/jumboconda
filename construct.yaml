@@ -13,12 +13,12 @@ channels:
 
 specs: specs.txt
 
-conda_default_channels:
-  - tufts
-  - pytorch
-  - conda-forge
-
 condarc:
+  channels:
+    - tufts
+    - pytorch
+    - conda-forge
+  channel_priority: strict
   solver: libmamba
 
 license_file: LICENSE
