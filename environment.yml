@@ -36,7 +36,7 @@ dependencies:
   - geopandas
   - geoplot
   - geopy
-  - geosnap
+  - geosnap < 0.14.0
   - geoviews
   - geowombat
   - git
@@ -124,7 +124,7 @@ dependencies:
   - python-duckdb
   - pytorch
   - pyyaml
-  - rasterio
+  - rasterio < 1.3.0
   - rasterstats
   - regex
   - requests
@@ -141,7 +141,7 @@ dependencies:
   - scikit-mobility
   - scikit-spatial
   - scikit-surprise
-  - scipy < 1.13.0
+  - scipy < 1.12.0
   - seaborn
   - sentinelsat
   - sgkit
