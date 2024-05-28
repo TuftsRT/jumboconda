@@ -124,7 +124,6 @@ dependencies:
   - python-duckdb
   - pytorch
   - pyyaml
-  - r5py
   - rasterio
   - rasterstats
   - regex
