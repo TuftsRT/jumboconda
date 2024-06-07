@@ -59,7 +59,7 @@ dependencies:
   - keplergl
   - laspy
   - leafmap
-  - lidar
+  - lidar < 0.7.2
   - mamba
   - mapclassify
   - matplotlib
