@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    win-64: c718b3bc98c1b791bb3c81a85801de18e367a0c7980a3995a77615381a87b3aa
+    win-64: 8ca53f82b36c2ef439094a719a22dd4d25fd63ad61a1f7098a1038a3c53baa2a
   channels:
   - url: tufts
     used_env_vars: []
@@ -5117,7 +5117,7 @@ package:
   category: main
   optional: false
 - name: jupyterlab
-  version: 4.1.8
+  version: 4.2.1
   manager: conda
   platform: win-64
   dependencies:
@@ -5137,10 +5137,10 @@ package:
     tomli: '>=1.2.2'
     tornado: '>=6.2.0'
     traitlets: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-4.1.8-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab-4.2.1-pyhd8ed1ab_0.conda
   hash:
-    md5: 1116781efc9fd1654a9da329d5d3ba26
-    sha256: 0f5f9abaa30560af1523d70e1a236b18f18a88627b91376cbdd3c27cc1ac5d9f
+    md5: 3e7290af6190b29c7017d6a8fb0eaeea
+    sha256: 507f87a6449a7d5d23ad24fcba41aed150770df18ae877a4fdf9da78039f1682
   category: main
   optional: false
 - name: jupyterlab_pygments
@@ -5366,7 +5366,7 @@ package:
   category: main
   optional: false
 - name: leafmap
-  version: 0.33.0
+  version: 0.33.1
   manager: conda
   platform: win-64
   dependencies:
@@ -5394,10 +5394,10 @@ package:
     scooby: ''
     whiteboxgui: ''
     xyzservices: ''
-  url: https://conda.anaconda.org/conda-forge/noarch/leafmap-0.33.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/leafmap-0.33.1-pyhd8ed1ab_0.conda
   hash:
-    md5: 0416af7e147e7dab5cdb51b12c9eeba5
-    sha256: 51c058692231e2915a336aa2e8b29573196be5c6c5c7ebe59c8dfce8ef6c097a
+    md5: 08bd6925524ad3cffb58727a9701befc
+    sha256: 1837a54235addff025bc5e6c28735353e3ebed06be73cae40d4231a24d19980c
   category: main
   optional: false
 - name: leather
@@ -13533,7 +13533,7 @@ package:
   category: main
   optional: false
 - name: xarray
-  version: 2024.5.0
+  version: 2024.6.0
   manager: conda
   platform: win-64
   dependencies:
@@ -13541,10 +13541,10 @@ package:
     packaging: '>=23.1'
     pandas: '>=2.0'
     python: '>=3.9'
-  url: https://conda.anaconda.org/conda-forge/noarch/xarray-2024.5.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/xarray-2024.6.0-pyhd8ed1ab_1.conda
   hash:
-    md5: e839fd0ae78a368c930f0b1feafa6736
-    sha256: cc5b17254ea131dace72eb3cea1ded242aa650c5dee4e0453eae1ffd699c0141
+    md5: a6775bba72ade3fd777ccac04902202c
+    sha256: 782aaa095b246f18c2486826d2a71d886b2b4b99c08378f2bfda5d61877e509b
   category: main
   optional: false
 - name: xarray-spatial
