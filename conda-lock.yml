@@ -13,7 +13,7 @@
 version: 1
 metadata:
   content_hash:
-    win-64: 29380cffd23cc60e82a0bf90f18862419d0f9b72145ef088cbb21904b208c1c6
+    win-64: c718b3bc98c1b791bb3c81a85801de18e367a0c7980a3995a77615381a87b3aa
   channels:
   - url: tufts
     used_env_vars: []
@@ -1102,18 +1102,18 @@ package:
   category: main
   optional: false
 - name: boto3
-  version: 1.34.124
+  version: 1.34.125
   manager: conda
   platform: win-64
   dependencies:
-    botocore: '>=1.34.124,<1.35.0'
+    botocore: '>=1.34.125,<1.35.0'
     jmespath: '>=0.7.1,<2.0.0'
     python: '>=3.8'
     s3transfer: '>=0.10.0,<0.11.0'
-  url: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.124-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/boto3-1.34.125-pyhd8ed1ab_0.conda
   hash:
-    md5: db49e7996c0a506501bbd7a7aabe379b
-    sha256: 7f6a78d0d22e8a0c07d9cf1c638d572a1b4c797c677728896a23cbe699f8395e
+    md5: 5dee1502bfa83b83b8bc07cf7cccb836
+    sha256: 7b627a89eba079fc6c7081b345a7edecfe4408fb97c031f20875419b4b0b3c28
   category: main
   optional: false
 - name: botocore
@@ -8558,6 +8558,25 @@ package:
     sha256: 7cfcc2801463ab806eb8d6a1907b6c90f330737ca9552f0daf6118de3eab1ee3
   category: main
   optional: false
+- name: polars
+  version: 0.20.31
+  manager: conda
+  platform: win-64
+  dependencies:
+    numpy: '>=1.16.0'
+    packaging: ''
+    python: '>=3.10,<3.11.0a0'
+    python_abi: 3.10.*
+    typing_extensions: '>=4.0.0'
+    ucrt: '>=10.0.20348.0'
+    vc: '>=14.3'
+    vc14_runtime: '>=14.38.33130'
+  url: https://conda.anaconda.org/conda-forge/win-64/polars-0.20.31-py310h9263643_0.conda
+  hash:
+    md5: 8c683eccdb9def326df99177ffaddbbf
+    sha256: 15c1fd78ed492d3e4e25fc5254551431e34f91af87a8e8309ca03eaa71202ae0
+  category: main
+  optional: false
 - name: pomegranate
   version: 1.0.0
   manager: conda
@@ -12668,7 +12687,7 @@ package:
   platform: win-64
   dependencies:
     dask: ''
-    numpy: '>=1.22.4,<2.0a0'
+    numpy: '>=1.19,<3'
     pillow: ''
     python: '>=3.10,<3.11.0a0'
     python_abi: 3.10.*
@@ -12677,10 +12696,10 @@ package:
     vc: '>=14.2,<15'
     vc14_runtime: '>=14.29.30139'
     xarray: ''
-  url: https://conda.anaconda.org/conda-forge/win-64/trollimage-1.23.2-py310hecd3228_0.conda
+  url: https://conda.anaconda.org/conda-forge/win-64/trollimage-1.23.2-py310hb4db72f_1.conda
   hash:
-    md5: ca4d92a199d52039492c31834347e6e4
-    sha256: 04df4d27ff62d46e4c98f1edd91ef1885661d9f0901389aac720f5b8742dda4f
+    md5: 26e969ce99cbf6e9ab4c1a25d07a123b
+    sha256: 719b6cd9f0de61513bda818ccba1506b954e5df63fd91b31d741535e0944cdfb
   category: main
   optional: false
 - name: trollsift

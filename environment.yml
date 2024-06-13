@@ -92,6 +92,7 @@ dependencies:
   - pip
   - plotly
   - plotnine
+  - polars
   - pomegranate
   - powershell-shortcut # [win]
   - proj

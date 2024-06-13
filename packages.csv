@@ -69,7 +69,7 @@ blosc,1.21.5,hdccc3a2_0
 bokeh,3.4.1,pyhd8ed1ab_0
 boltons,24.0.0,pyhd8ed1ab_0
 boost-cpp,1.78.0,h9f4b32c_4
-boto3,1.34.124,pyhd8ed1ab_0
+boto3,1.34.125,pyhd8ed1ab_0
 botocore,1.34.125,pyge310_1234567_0
 bqplot,0.12.43,pyhd8ed1ab_0
 branca,0.7.2,pyhd8ed1ab_0
@@ -540,6 +540,7 @@ plotnine,0.13.6,pyhd8ed1ab_0
 pluggy,1.5.0,pyhd8ed1ab_0
 ply,3.11,pyhd8ed1ab_2
 pointpats,2.3.0,pyhd8ed1ab_0
+polars,0.20.31,py310h9263643_0
 pomegranate,1.0.0,pyhd8ed1ab_1
 pooch,1.8.2,pyhd8ed1ab_0
 poppler-data,0.4.12,hd8ed1ab_0
@@ -794,7 +795,7 @@ tpot,0.12.2,pyhd8ed1ab_0
 tqdm,4.66.4,pyhd8ed1ab_0
 traitlets,5.14.3,pyhd8ed1ab_0
 traittypes,0.2.1,pyh9f0ad1d_2
-trollimage,1.23.2,py310hecd3228_0
+trollimage,1.23.2,py310hb4db72f_1
 trollsift,0.5.1,pyhd8ed1ab_0
 trove-classifiers,2024.5.22,pyhd8ed1ab_0
 typer,0.9.4,pyhd8ed1ab_0

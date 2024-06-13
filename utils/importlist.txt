@@ -69,6 +69,7 @@ pingouin
 pint
 plotly
 plotnine
+polars
 pomegranate
 PseudoNetCDF
 psycopg2
