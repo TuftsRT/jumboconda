@@ -146,6 +146,7 @@ dependencies:
   - sentinelsat
   - sgkit
   - shapely
+  - simpy
   - snorkel
   - spacy
   - sparse

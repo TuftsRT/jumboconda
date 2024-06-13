@@ -107,6 +107,7 @@ seaborn
 sentinelsat
 shapefile
 shapely
+simpy
 skgstat
 skimage
 sklearn
