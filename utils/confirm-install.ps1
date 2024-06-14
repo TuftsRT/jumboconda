@@ -1,5 +1,5 @@
 $hook = "C:\JumboConda\shell\condabin\conda-hook.ps1"
-$hash = "DEDA9DCF6F93E6F052A83F8F8E7CD4FB9A0E5DF1E9950DA5D83FA07D989A85F8"
+$hash = "C9D7A3D8A38BD9A7C9AF6874EDD43DE4D084BCECD26B1B2319277EEC1797E5D4"
 $algo = "SHA256"
 if (Test-Path $hook) {
     Invoke-Expression $hook
