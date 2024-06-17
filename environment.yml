@@ -54,7 +54,7 @@ dependencies:
   - ipywidgets >= 8.0.1
   - jdcal
   - joblib
-  - jupysql
+  - jupysql < 0.10.2
   - jupyter-resource-usage
   - jupyterlab 4.2.1
   - keplergl
