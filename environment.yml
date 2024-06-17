@@ -22,6 +22,7 @@ dependencies:
   - dask < 2023.11.0
   - datashader
   - dill
+  - duckdb-engine
   - earthengine-api
   - earthpy
   - eo-learn
