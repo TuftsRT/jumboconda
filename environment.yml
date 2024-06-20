@@ -16,6 +16,7 @@ dependencies:
   - conda
   - conda-libmamba-solver
   - contextily
+  - cowpy
   - cpuonly
   - csvkit
   - curl
