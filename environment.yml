@@ -57,7 +57,7 @@ dependencies:
   - joblib
   - jupysql < 0.10.2
   - jupyter-resource-usage
-  - jupyterlab 4.2.1
+  - jupyterlab 4.2.5
   - keplergl
   - laspy
   - leafmap
