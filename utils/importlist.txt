@@ -124,6 +124,7 @@ spectral
 sqlalchemy
 stateplane
 statsmodels
+stonesoup
 streamz
 sunpy
 surprise

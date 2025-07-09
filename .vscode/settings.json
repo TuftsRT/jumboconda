@@ -118,6 +118,7 @@
     "sqlalchemy",
     "stateplane",
     "statsmodels",
+    "stonesoup",
     "streamz",
     "sunpy",
     "sympy",
