@@ -80,7 +80,7 @@ dependencies:
   - nltk
   - nodejs
   - numba
-  - numexpr >= 2.8.0
+  - numexpr >= 2.8.4
   - numpy
   - obspy
   - optuna
