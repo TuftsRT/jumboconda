@@ -38,7 +38,7 @@ dependencies:
   - geopandas
   - geoplot
   - geopy
-  - geosnap < 0.14.0
+  - geosnap
   - geoviews
   - geowombat
   - git
@@ -55,13 +55,13 @@ dependencies:
   - ipywidgets >= 8.0.1
   - jdcal
   - joblib
-  - jupysql < 0.10.2
+  - jupysql
   - jupyter-resource-usage
   - jupyterlab 4.2.5
   - keplergl
   - laspy
   - leafmap
-  - lidar < 0.7.2
+  - lidar
   - mamba
   - mapclassify
   - matplotlib
@@ -86,7 +86,7 @@ dependencies:
   - optuna
   - osmnx
   - pandana
-  - pandas < 2.2.0
+  - pandas
   - pandoc
   - pillow
   - pingouin
@@ -125,9 +125,9 @@ dependencies:
   - pytables
   - python 3.10.*
   - python-duckdb
-  - pytorch >= 2.3.0
+  - pytorch
   - pyyaml
-  - rasterio < 1.3.0
+  - rasterio
   - rasterstats
   - regex
   - requests
@@ -144,7 +144,7 @@ dependencies:
   - scikit-mobility
   - scikit-spatial
   - scikit-surprise
-  - scipy < 1.12.0
+  - scipy
   - seaborn
   - sentinelsat
   - setuptools < 80
@@ -172,7 +172,7 @@ dependencies:
   - utm
   - vaex-arrow
   - vaex-astro
-  - vaex-core >= 4.17.1
+  - vaex-core
   - vaex-hdf5
   - vaex-jupyter
   - vaex-ml
