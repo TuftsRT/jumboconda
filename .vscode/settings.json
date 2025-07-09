@@ -45,6 +45,7 @@
     "laspy",
     "leafmap",
     "libmamba",
+    "libpysal",
     "LOCALAPPDATA",
     "mapclassify",
     "matplotlib",
