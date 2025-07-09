@@ -93,6 +93,7 @@ pyroSAR
 pyrosm
 pysal
 pyspectral
+pystac
 rasterio
 rasterstats
 regex

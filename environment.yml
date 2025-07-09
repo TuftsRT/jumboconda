@@ -123,6 +123,7 @@ dependencies:
   - pyshp
   - pysoundfile
   - pyspectral
+  - pystac
   - pytables
   - python 3.10.*
   - python-duckdb

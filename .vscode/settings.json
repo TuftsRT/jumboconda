@@ -95,6 +95,7 @@
     "pyshp",
     "pysoundfile",
     "pyspectral",
+    "pystac",
     "pytables",
     "pyyaml",
     "rasterio",
