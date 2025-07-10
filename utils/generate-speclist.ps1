@@ -1,5 +1,5 @@
 Start-Process -FilePath "conda-lock"  -WindowStyle "Hidden" -Wait `
-    -ArgumentList "render -k env conda-lock.yml"
+    -ArgumentList "render -k env conda-lock.yaml"
 
 $infile = "conda-win-64.lock.yml"
 $outfile = "specs.txt"
